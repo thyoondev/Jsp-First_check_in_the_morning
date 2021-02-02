@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Serif+KR:wght@200;300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{ 
+    width: 600px;
+    margin: 0 auto;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    background-image: -webkit-linear-gradient(bottom, #ace0f9 0%, #fff1eb 100%);
+    background-image: -o-linear-gradient(bottom, #ace0f9 0%, #fff1eb 100%);
+    background-image: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
+}
+.main-inner{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentbox{
+    margin-top: -83px;
+    width: 80%;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 50px;
+    padding: 20% 0;
+}
+.contentbox-inner{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+/*홈 탭*/
+#home{
+    display: flex;
+    justify-content: center;
+}
+.home-title{
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 2px 1px 1px gray;
+}
+.home-devinfo{
+    font-family: 'Noto Serif KR', serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 1px 1px gray;
+}
+
+/*날씨 탭*/
+#weather{
+    display: none;
+    justify-content: center;
+}
+.weather{
+    font-family: 'Noto Serif KR', serif;
+    color: #fff;
+    text-shadow: 2px 1px 1px gray;
+    text-align: center;
+}
+.weather-location{
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+.weather-stat{
+    font-size: 0.8rem;
+}
+.weather-img{
+    width: 500px;
+}
+.weather-temp{
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+.weather-temp-max,.weather-temp-min{
+    font-size: 0.8rem;
+}
+
+.weather-rain{
+    font-size: 1.rem;
+}
+
+
+/*버스 탭*/
+#bus{
+    display: none;
+    justify-content: center;
+}
+.bus{
+    font-family: 'Noto Serif KR', serif;
+    color: #fff;
+    text-shadow: 2px 1px 1px gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.bus-table{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 30px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 1px );
+    border-radius: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #fff;
+}
+
+
+nav{
+    width: 600px;
+    height: 83px;
+    background: rgba( 255, 255, 255, 0.55 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    position: fixed;
+    bottom: 0;
+}
+
+.nav-inner{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.nav-inner-icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-inner-icon i{
+    font-size: 24px;
+    max-width: 50%;
+}
+.nav-inner-icon:hover{
+    color: #08AEEA;
+}
+.nav-inner-txt{
+    font-size: 12px;
+}
+#nav-home{
+    color: #08AEEA;
+}
+
+@media (max-width: 600px) {
+    body{ 
+    width: 100%;
+    }
+    nav{
+    width: 100%;
+    }
+}
