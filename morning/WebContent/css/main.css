@@ -5,13 +5,16 @@
     padding: 0;
     border: 0;
 }
+html{
+	height: 100%;
+}
 body{ 
     width: 600px;
-    margin: 0 auto;
+	height: 100%;
 }
 main{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-image: -webkit-linear-gradient(bottom, #ace0f9 0%, #fff1eb 100%);
     background-image: -o-linear-gradient(bottom, #ace0f9 0%, #fff1eb 100%);
     background-image: linear-gradient(to top, #ace0f9 0%, #fff1eb 100%);
@@ -24,7 +27,6 @@ main{
     align-items: center;
 }
 .contentbox{
-    margin-top: -83px;
     width: 80%;
     background: rgba( 255, 255, 255, 0.4 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -32,6 +34,7 @@ main{
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 50px;
     padding: 5% 0;
+    margin: 5% 0;
 }
 .contentbox-inner{
     height: 100%;
@@ -107,7 +110,7 @@ main{
     text-shadow: 1px 1px 1px gray;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
@@ -126,6 +129,7 @@ main{
     border-radius: 10px;
     margin: 5px;
     border: 1px solid #fff;
+    padding: 5px;
 }
 .bus-table-num{
     font-size: 1.2rem;
@@ -148,7 +152,7 @@ nav{
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    position: fixed;
+    position: sticky;
     bottom: 0;
 }
 
